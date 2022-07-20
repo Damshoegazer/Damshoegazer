@@ -12,11 +12,16 @@
 
 /* BANNER */
 
+/* EXTEND */
+.p-top-banner {
+    font-family: TruenoSBd;
+    animation: toptext_banner 5000ms infinite ease
+}
+    ;
 .top_text_banner {
     @include text-banner;
         p {
-            font-family: TruenoSBd;
-            animation: toptext_banner 5000ms infinite ease;
+            @extend .p-top-banner;
 
 }
 }
@@ -30,8 +35,6 @@
             width: 100%;
 }
 }
-
-
 
 
 /* PRODUCTOS */
@@ -97,6 +100,8 @@
     grid-template-columns: repeat(auto-fill, minmax(38rem,1fr));
     margin-bottom: 20vh;
 }
+
+
 @mixin services-image {
     display: flex;
     flex-direction: column;
