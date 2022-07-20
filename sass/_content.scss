@@ -1,18 +1,19 @@
 
 
 
-
-
-/* BANNER */
-
-.top_text_banner {
+@mixin text-banner {
     background-color: #a8a8a8;
     height: 5vh;
     padding-top: 1vh;
     font-size: 15px;
     display: grid;
     place-content: center;
+}
 
+/* BANNER */
+
+.top_text_banner {
+    @include text-banner;
         p {
             font-family: TruenoSBd;
             animation: toptext_banner 5000ms infinite ease;
@@ -35,9 +36,8 @@
 
 /* PRODUCTOS */
 
-.text_product {
-    /* width: ; */
-    
+/* MIXINS */
+@mixin product-text {
     display: flex;
     flex-direction: column;
     height: 25vh;
@@ -46,30 +46,37 @@
     background-color: #1f1f1f;
     margin: 20vh 0vw 5vh 0vw;
     background-image: url(../assets/fondo_prod.png);
+}
+
+@mixin h1-product {
+    font-family: TruenoSBd;
+    font-size: 50px;
+    background-color: $coloracento;
+    padding: 0vh 10vw 0vh 10vw;
+    color: $colorwhite;
+}
+@mixin p-product {
+    font-family: Gordita-Regular;
+    font-size: 20px;
+    background-color: $colorwhite;
+    color: #000000;
+    width: 50vw;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+
+.text_product {
+    @include product-text; 
     
         h1 {
-            font-family: TruenoSBd;
-            font-size: 50px;
-            background-color: $coloracento;
-            padding: 0vh 10vw 0vh 10vw;
-            color: $colorwhite;
+        @include  h1-product;
 }
-
 
         p {
-            font-family: Gordita-Regular;
-            font-size: 20px;
-            background-color: $colorwhite;
-            color: #000000;
-            width: 50vw;
-            text-align: center;
-            /* padding: 0vh 4vw 0vh 4vw; */
-
+        @include  p-product;   
+            
 }
 }
-
-
-
 
 /* PRODUCTOS IMAGENES */
 
@@ -82,28 +89,15 @@
 
 
 /* SERVICIOS */
-
-
-.servicios_group {
-    display: flex;
-    flex-direction: column;
-}
-
-.servicios__container {
+/* MIXINS */
+@mixin container-services {
     display: grid;
     justify-items: center;
     row-gap: 10vh;
     grid-template-columns: repeat(auto-fill, minmax(38rem,1fr));
     margin-bottom: 20vh;
-
-        :hover {
-            background-color: $coloracento;
-            transition: 300ms;
 }
-    
-}
-
-.img__servicios {
+@mixin services-image {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,6 +106,47 @@
     width: 25vw;
     height: 80vh;
     border: 1px solid black;
+}
+@mixin text-services {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin h4-text-services {
+    font-family: TruenoSBd;
+    font-size: 22px;
+    text-align: center;
+    width: 24vw;
+}
+@mixin p-text-services {
+    font-family: Gordita-light;
+    font-size: 20px;
+    width: 19vw;
+    text-align: center;
+}
+/* -------------------------------------------------------- */
+
+
+.servicios_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios__container {
+    @include container-services;
+
+        :hover {
+            background-color: $coloracento;
+            transition: 300ms;
+            color: $colorwhite;
+}
+    
+}
+
+.img__servicios {
+    @include services-image;
 
         img {
             width: 20vw;
@@ -120,24 +155,14 @@
 }
 
 .servicios_text {
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    @include text-services;
 
         h4 {
-            font-family: TruenoSBd;
-            font-size: 22px;
-            text-align: center;
-            width: 24vw;
+        @include h4-text-services;
 }
 
         p {
-            font-family: Gordita-light;
-            font-size: 20px;
-            width: 19vw;
-            text-align: center;
+        @include p-text-services; 
 
 }
 }

@@ -1,0 +1,69 @@
+/* MIXINS */
+@mixin catalog-text {
+    font-family: TruenoUltLt;
+    background-color: black;
+    color: $colorwhite;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 79vw;
+    text-align: center;
+    font-size: 16px;
+}
+@mixin catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr));
+    gap: 13.4rem;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+@mixin catalog-zapa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20.5vw;
+    box-shadow: 10px 20px 35px -30px black;
+    background-color: $colorwhite;
+}
+@mixin catalog-text-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-family: TruenoUltLt;
+    margin: 2vh 1vw 1vh 1vw;
+}
+
+/* ---------------------------------------------------- */
+
+.text_catalogo {
+    @include catalog-text;
+}
+
+
+.catalogo_container {
+    @include catalog-container;
+    
+}
+
+.catalogo_zapa {
+    @include catalog-zapa;
+
+        :hover {
+            transform: scale(1.1);
+    
+        }
+}
+
+.card_text_catalogo {
+    @include catalog-text-card;
+        
+        p {
+            margin: 0;
+            font-size: 18px;
+            color: rgb(90, 90, 90);
+
+}
+}

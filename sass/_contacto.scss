@@ -1,0 +1,109 @@
+
+/* MIXINS */
+
+@mixin text-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35vw;
+    margin-top: 11vh;
+    margin-left: 8vw;
+    padding-left: 15vw;
+    color: $colorwhite;
+    z-index: 1;
+}
+@mixin class-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-right: 18vw;
+    width: 35%;
+    z-index: 1;
+}
+@mixin size-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 4vh;
+    width: 28vw;
+    font-family: Gordita-Regular;
+}
+
+/* --------------------------------------------------------- */
+
+.form_text {
+    @include text-form;
+        
+        h1 {
+            font-family: TruenoSBd;
+            font-size: 50px;
+}
+        h4 {
+            font-family: Gordita-Regular;
+            font-size: 22px;
+            width: 20vw;
+}
+}
+
+.form_class {
+    @include class-form;
+
+        .input_ {
+            box-shadow: 5px 5px 1px;
+}
+        input {
+            margin: 15px;
+            width: 400px;
+            height: 40px;
+            border: 2px solid;
+}
+        textarea {
+            width: 400px;
+            height: 100px;
+            border: 2px solid;
+            margin: 15px;
+            box-shadow: 5px 5px 1px;
+    
+}
+}
+
+.input_size {
+    @include size-input;
+
+        input {
+            margin: 0px 10px 0px 17px;
+}
+        p {
+            font-size: 16px;
+            height: 4vh;
+            padding-top: 10px;
+}
+}
+
+#checkbox {
+    width: 15px;
+}
+
+.submit {
+    input {
+        background-color: black;
+        color: $colorwhite;
+        width: 400px;
+        height: 40px;
+        font: bold15px arial,sans-serif;
+}
+    :hover {
+        height: 8vh;
+        transition: 300ms;
+}
+}
+
+.back__rectangle {
+    img {
+        width: 70rem;
+        z-index: -1;
+        transform: translate(20vw,-70vh);
+}
+}
