@@ -1,0 +1,67 @@
+/* BARRA DE NAVEGACIÓN */
+
+
+.top__nav {
+    background-color: white;
+    height: 20px;
+    p {
+        font-family: Gordita-Regular;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.nav-back {
+    display: flex;
+    gap: 20vw;
+    justify-content: space-between;
+    background-color: $colornegro;
+    z-index: 2;
+}
+.brand_nav {
+    width: 50vw;
+}
+
+
+nav {
+    background-color: $colornegro;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30vw;
+    height: 10vh;
+    
+
+    .image_logo {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 16vw;
+        /* background-color: $colornegro; */
+    }
+    .hamburguesa {
+        display: grid;
+        height: 3vh;
+        margin-right: 16vw;
+        transform: translateY(3.5vh);
+        
+    }
+    ul {
+        display: none;
+        align-items: center;
+        gap: 2vw;
+        font-family: $fuentelight;
+        
+        li {
+
+            a {
+                color: aliceblue;  
+            }
+        }       
+            
+            
+            li :hover{
+            background-color: #DC2D7D;
+            }
+
+    }
+    
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: TruenoSBd;
+    src: url(../fonts/TruenoBlk.otf);
+}
+@font-face {
+    font-family: TruenoUltLt;
+    src: url(../fonts/TruenoUltLt.otf);
+}
+@font-face {
+    font-family: Gordita-Regular;
+    src: url(../fonts/Gordita-Regular.otf);
+}
+
+body {
+    background-image: url(../assets/back_nuevo_2.jpg);
+}
