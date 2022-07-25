@@ -41,10 +41,15 @@
         }
         
         .submit {
+            :hover {
+                background-color: $coloracento;
+                transition: 500ms;
+            }
             input {
                 width: 90vw;
                 background-color: $colornegro;
-                color: white;
+                color: map-get($map: $colorescalidos, $key: 'blanco');
+
             }
         }
     }

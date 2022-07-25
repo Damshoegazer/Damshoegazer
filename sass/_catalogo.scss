@@ -4,7 +4,7 @@
         margin-top: 5vh;
         h3 {
             background-color: $colornegro;
-            color: white;
+            color: map-get($map: $colorescalidos, $key: 'blanco');
             font-family: Gordita-Regular;
             font-size: 20px;
             text-align: center;
@@ -24,7 +24,7 @@
                     flex-direction: column;
                     gap: 1vh;
                     padding: 10px;
-                    background-color: rgb(255, 255, 255);
+                    background-color: map-get($map: $colorescalidos, $key: 'blanco');
 
                     p {
                         font-family: TruenoUltLt;

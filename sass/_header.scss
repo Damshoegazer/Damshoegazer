@@ -2,7 +2,7 @@
 
 
 .top__nav {
-    background-color: white;
+    background-color: map-get($map: $colorescalidos, $key: 'blanco');
     height: 20px;
     p {
         font-family: Gordita-Regular;
@@ -35,7 +35,7 @@ nav {
         display: inline-flex;
         align-items: center;
         margin-left: 16vw;
-        /* background-color: $colornegro; */
+
     }
     .hamburguesa {
         display: grid;
@@ -53,13 +53,13 @@ nav {
         li {
 
             a {
-                color: aliceblue;  
+                color: map-get($map: $colorescalidos, $key: 'blanco');  
             }
         }       
             
             
             li :hover{
-            background-color: #DC2D7D;
+            background-color: $coloracento;
             }
 
     }

@@ -9,16 +9,10 @@
 
 }
 
-/* header {
-    grid-area: header;
-    background-color: lightblue;
-} */
-
 section {
 
     
 }
-
 
 .video_banner_landing {
     height: 50vh;
@@ -40,7 +34,7 @@ section {
         text-align: center;
         font-family: TruenoSBd;
         font-size: 50px;
-        color: white;
+        color: map-get($map: $colorescalidos, $key: 'blanco');
         display: grid;
         align-items: center;
 }
@@ -61,7 +55,7 @@ section {
         p {
             width: 100%;
             background-color: $colornegro;
-            color: white;
+            color: map-get($map: $colorescalidos, $key: 'blanco');
             font-family: Gordita-Regular;
             text-align: center;
         }    
@@ -99,14 +93,14 @@ section {
             text-align: center;
             font-family: TruenoSBd;
             font-size: 50px;
-            color: white;
+            color: map-get($map: $colorescalidos, $key: 'blanco');
             display: grid;
             align-items: center;
         }
         p {
             width: 100%;
             background-color: $colornegro;
-            color: white;
+            color: map-get($map: $colorescalidos, $key: 'blanco');
             font-family: Gordita-Regular;
             text-align: center;
         } 

@@ -20,7 +20,7 @@ section {
             display: flex;
             flex-direction: column;
             font-family: TruenoSBd;
-            color: #FFE8F2;
+            color: map-get($map: $colorescalidos, $key: 'colorrosa' );
             h2 {
                 font-size: 15vw;
                 text-align: center;
@@ -60,7 +60,7 @@ section {
             display: flex;
             flex-direction: column;
             font-family: TruenoSBd;
-            color: #FFE8F2;
+            color: map-get($map: $colorescalidos, $key: 'colorrosa' );
             z-index: 1;
             position: relative;
 
