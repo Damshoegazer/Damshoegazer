@@ -1,0 +1,37 @@
+.main_catalogo {
+
+    .text_catalogo {
+        margin-top: 5vh;
+        h3 {
+            background-color: $colornegro;
+            color: white;
+            font-family: Gordita-Regular;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+        .catalogo_container {
+            display: flex;
+            gap: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 10vh;
+            
+            .catalogo_zapa {
+
+                .card_text_catalogo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vh;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+
+                    p {
+                        font-family: TruenoUltLt;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+}

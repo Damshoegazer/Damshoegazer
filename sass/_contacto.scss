@@ -1,0 +1,52 @@
+
+.contacto_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+
+    .form_text {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-family: TruenoSBd;
+        font-size: 10vw;
+        text-align: center;
+        color: $coloracento;
+    }
+    h4 {
+        font-family: TruenoSBd;
+        text-align: center;
+    }
+}
+
+    .form_class {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+
+        .input_ {
+            width: 90vw;
+            height: 5vh;
+            border: 2px solid $colornegro;
+            box-shadow: 5px 5px;
+        }
+        textarea {
+            width: 90vw;
+            height: 20vh;
+            border: 2px solid $colornegro;
+            box-shadow: 5px 5px;
+        }
+        
+        .submit {
+            input {
+                width: 90vw;
+                background-color: $colornegro;
+                color: white;
+            }
+        }
+    }
+
+}

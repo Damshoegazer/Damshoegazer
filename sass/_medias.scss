@@ -145,7 +145,31 @@ section {
         }
     }
 }
-    
+
+
+                    /* CATALOGO */
+
+
+.main_catalogo {
+
+    .text_catalogo {
+        margin-top: 10vh;
+
+    }
+
+        .catalogo_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 10vh;
+
+        }
+
+}
+
     
 }   
 
@@ -258,6 +282,45 @@ section {
             }
         }
     }
+
+
+                /* CONTACTO */
+
+    .contacto_form {
+        .form_text {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-family: TruenoSBd;
+                font-size: 100px;
+                width: 800px;
+                text-align: center;
+                color: $coloracento;
+            }
+        }
+        .form_class {
+            gap: 4vh;
+
+        .input_ {
+            width: 900px;
+            height: 5vh;
+            border: 2px solid $colornegro;
+            box-shadow: 5px 5px;
+        }
+        textarea {
+            width: 900px;
+            height: 20vh;
+        }
+        
+        .submit {
+            input {
+                width: 900px;
+                height: 40px;
+            }
+        }
+    }
+    }
+    
 
 
 }

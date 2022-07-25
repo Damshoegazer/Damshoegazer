@@ -159,6 +159,67 @@ section {
         z-index: -1;
         opacity: 30%; }
 
+.main_catalogo .text_catalogo {
+  margin-top: 5vh; }
+  .main_catalogo .text_catalogo h3 {
+    background-color: black;
+    color: white;
+    font-family: Gordita-Regular;
+    font-size: 20px;
+    text-align: center; }
+
+.main_catalogo .catalogo_container {
+  display: flex;
+  gap: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh; }
+  .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 10px;
+    background-color: white; }
+    .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo p {
+      font-family: TruenoUltLt;
+      margin: 0; }
+
+.contacto_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh; }
+  .contacto_form .form_text {
+    display: flex;
+    flex-direction: column; }
+    .contacto_form .form_text h1 {
+      font-family: TruenoSBd;
+      font-size: 10vw;
+      text-align: center;
+      color: #DC2D7D; }
+    .contacto_form .form_text h4 {
+      font-family: TruenoSBd;
+      text-align: center; }
+  .contacto_form .form_class {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh; }
+    .contacto_form .form_class .input_ {
+      width: 90vw;
+      height: 5vh;
+      border: 2px solid black;
+      box-shadow: 5px 5px; }
+    .contacto_form .form_class textarea {
+      width: 90vw;
+      height: 20vh;
+      border: 2px solid black;
+      box-shadow: 5px 5px; }
+    .contacto_form .form_class .submit input {
+      width: 90vw;
+      background-color: black;
+      color: white; }
+
 /* BARRA DE NAVEGACIÓN */
 .top__nav {
   background-color: white;
@@ -340,7 +401,18 @@ footer {
         width: 300px;
         /* left: 450px; */
         position: absolute;
-        transform: translateY(-320px); } }
+        transform: translateY(-320px); }
+  /* CATALOGO */
+  .main_catalogo .text_catalogo {
+    margin-top: 10vh; }
+  .main_catalogo .catalogo_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh; } }
 
 @media (min-width: 1024px) {
   /* HEADER */
@@ -394,7 +466,30 @@ footer {
           font-size: 35px;
           height: 70vh; }
       section .porque__img img {
-        width: 500px; } }
+        width: 500px; }
+  /* CONTACTO */
+  .contacto_form .form_text {
+    display: flex;
+    flex-direction: column; }
+    .contacto_form .form_text h1 {
+      font-family: TruenoSBd;
+      font-size: 100px;
+      width: 800px;
+      text-align: center;
+      color: #DC2D7D; }
+  .contacto_form .form_class {
+    gap: 4vh; }
+    .contacto_form .form_class .input_ {
+      width: 900px;
+      height: 5vh;
+      border: 2px solid black;
+      box-shadow: 5px 5px; }
+    .contacto_form .form_class textarea {
+      width: 900px;
+      height: 20vh; }
+    .contacto_form .form_class .submit input {
+      width: 900px;
+      height: 40px; } }
 
 @media (min-width: 1366px) {
   /* LANDING */
