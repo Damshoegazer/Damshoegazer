@@ -4,15 +4,6 @@
 /* SECTIONS */
 /* CUADRADOS */
 
-.grid_general {
-
-
-}
-
-section {
-
-    
-}
 
 .video_banner_landing {
     height: 50vh;
@@ -33,11 +24,13 @@ section {
         background-color: $coloracento;
         text-align: center;
         font-family: TruenoSBd;
-        font-size: 50px;
+        font-size: 40px;
         color: map-get($map: $colorescalidos, $key: 'blanco');
         display: grid;
         align-items: center;
 }
+
+              /* PRODUCTOS */
 
 .products {
     display: flex;
@@ -70,6 +63,10 @@ section {
     margin-top: 5vh;
     margin-bottom: 5vh;
 
+    img {
+        width: 280px;
+    }
+
 }
 
 
@@ -92,7 +89,7 @@ section {
             background-color: $coloracento;
             text-align: center;
             font-family: TruenoSBd;
-            font-size: 50px;
+            font-size: 40px;
             color: map-get($map: $colorescalidos, $key: 'blanco');
             display: grid;
             align-items: center;
@@ -119,7 +116,8 @@ section {
             flex-direction: column;
             align-items: center;
             padding:10vh 0;
-            background-color: rgb(227, 227, 227);
+            background-color: white;
+            box-shadow: 10px 10px 30px -12px rgba(0, 0, 0, 0.5);
 
             img {
                 width: 70vw;

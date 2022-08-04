@@ -7,12 +7,13 @@ footer {
     @include display;
     gap: 10vh;
     background-color: $colornegro;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
 
     .footer__links {
         @include display;
         align-items: center;
+        padding-left: 0px;
         margin-top: 5vh;
         gap: 5vh;
         li {
@@ -29,14 +30,22 @@ footer {
     .footer__social {
         display: flex;
         justify-content: center;
-        gap: 5vw;
-        
-
+        gap: 30px;
+        padding-left: 0;
     }
     p {
         color: map-get($map: $colorescalidos, $key: 'blanco');
         font-family: TruenoUltLt;
         text-align: center;
         margin-bottom: 5vh;
+        
+    }
+    .img_whatsapp {
+        display: flex;
+        transform: translate(40vw, -10vh);
+        left: 120px;
+        z-index: 3;
+        width: 50px;
+        
     }
 }

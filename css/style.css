@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0; }
 
+/* PRODUCTOS */
 .products {
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@
       background-color: #DC2D7D;
       text-align: center;
       font-family: TruenoSBd;
-      font-size: 50px;
+      font-size: 40px;
       color: #fff;
       display: grid;
       align-items: center; }
@@ -47,6 +48,8 @@
   gap: 5vh;
   margin-top: 5vh;
   margin-bottom: 5vh; }
+  .contenedor img {
+    width: 280px; }
 
 /* SERVICIOS */
 .services {
@@ -64,7 +67,7 @@
       background-color: #DC2D7D;
       text-align: center;
       font-family: TruenoSBd;
-      font-size: 50px;
+      font-size: 40px;
       color: #fff;
       display: grid;
       align-items: center; }
@@ -86,7 +89,8 @@
       flex-direction: column;
       align-items: center;
       padding: 10vh 0;
-      background-color: #e3e3e3; }
+      background-color: white;
+      box-shadow: 10px 10px 30px -12px rgba(0, 0, 0, 0.5); }
       .services .contenedor2__images img {
         width: 70vw; }
       .services .contenedor2__images p {
@@ -221,12 +225,22 @@ section {
 
 /* BARRA DE NAVEGACIÓN */
 .top__nav {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  height: 20px; }
+  height: 20px;
+  animation: backcolor 4000ms linear infinite alternate; }
   .top__nav p {
     font-family: Gordita-Regular;
     font-size: 14px;
     text-align: center; }
+
+@keyframes backcolor {
+  0% {
+    background-color: white; }
+  50% {
+    background-color: black;
+    color: white; } }
 
 .nav-back {
   display: flex;
@@ -235,15 +249,18 @@ section {
   background-color: black;
   z-index: 2; }
 
-.brand_nav {
-  width: 50vw; }
-
 nav {
   background-color: black;
   display: flex;
   justify-content: space-evenly;
   gap: 30vw;
   height: 10vh; }
+  nav .navbar-brand .brand_nav {
+    width: 130px; }
+  nav .navbar-toggler {
+    width: 40px;
+    text-align: center;
+    opacity: 30%; }
   nav .image_logo {
     display: inline-flex;
     align-items: center;
@@ -283,19 +300,20 @@ nav {
   src: url(../fonts/Gordita-Regular.otf); }
 
 body {
-  background-image: url(../assets/back_nuevo_2.jpg); }
+  background-image: url(../assets/fondo_boutique.png); }
 
 footer {
   display: flex;
   flex-direction: column;
   gap: 10vh;
   background-color: black;
-  padding-left: 5vw;
-  padding-right: 5vw; }
+  padding-left: 0;
+  padding-right: 0; }
   footer .footer__links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0px;
     margin-top: 5vh;
     gap: 5vh; }
     footer .footer__links li :hover {
@@ -306,22 +324,43 @@ footer {
   footer .footer__social {
     display: flex;
     justify-content: center;
-    gap: 5vw; }
+    gap: 30px;
+    padding-left: 0; }
   footer p {
     color: #fff;
     font-family: TruenoUltLt;
     text-align: center;
     margin-bottom: 5vh; }
+  footer .img_whatsapp {
+    display: flex;
+    transform: translate(40vw, -10vh);
+    left: 120px;
+    z-index: 3;
+    width: 50px; }
+
+@media (min-width: 300px) {
+  nav .navbar-brand .brand_nav {
+    width: 160px; } }
+
+@media (min-width: 400px) {
+  nav .navbar-brand .brand_nav {
+    width: 180px; } }
 
 @media (min-width: 600px) {
-  nav {
-    gap: 50vw; }
-    nav .brand_nav {
-      width: 250px; }
-  .image_logo svg {
-    width: 220px; }
-  .hamburguesa {
-    margin-right: 100vw; } }
+  nav .navbar-brand .brand_nav {
+    width: 200px; }
+  /* LANDING */
+  .products__h2 h2 {
+    width: 90vw;
+    height: 22vh;
+    font-size: 60px;
+    color: #fff;
+    display: grid;
+    align-items: center; }
+  /* servicios */
+  .services__h2 h2 {
+    width: 90vw;
+    font-size: 60px; } }
 
 @media (min-width: 800px) {
   /* HEADER */
@@ -330,30 +369,17 @@ footer {
   .video_banner_landing {
     height: 100%; }
   /* LANDING */
-  .products {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .products__h2 {
-      width: 90vw; }
-      .products__h2 h2 {
-        width: 100%;
-        height: 22vh;
-        background-color: #DC2D7D;
-        text-align: center;
-        font-family: TruenoSBd;
-        font-size: 50px;
-        color: #fff;
-        display: grid;
-        align-items: center;
-        width: 100%;
-        height: 15vh; }
-      .products__h2 p {
-        width: 80vw;
-        font-family: Gordita-Regular;
-        font-size: 24px; }
-    .products .contenedor img {
-      width: 60vw; }
+  .products__h2 {
+    width: 90vw; }
+    .products__h2 h2 {
+      width: 90vw;
+      height: 15vh;
+      font-size: 60px; }
+    .products__h2 p {
+      width: 80vw;
+      font-size: 24px; }
+  .products .contenedor img {
+    width: 60vw; }
   /* servicios */
   .services__h2 {
     width: 90vw; }
@@ -433,6 +459,7 @@ footer {
   /* LANDING */
   .products .contenedor {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr); }
     .products .contenedor img {
       width: 30vw; }
@@ -489,7 +516,14 @@ footer {
       height: 20vh; }
     .contacto_form .form_class .submit input {
       width: 900px;
-      height: 40px; } }
+      height: 40px; }
+  /* FOOTER */
+  footer .img_whatsapp {
+    position: fixed;
+    bottom: 10vh;
+    left: 50vw;
+    z-index: 3;
+    width: 70px; } }
 
 @media (min-width: 1366px) {
   /* LANDING */
