@@ -273,15 +273,6 @@ section {
     section {
         .historia {
             right: 200px;
-
-            &__h2 {
-                h2 {
-                    /* font-size: 90px; */
-                }
-                p {
-               /*  height: 50vh; */
-                }
-            }
             &__img {
                 img {
                     width: 700px;
@@ -368,6 +359,8 @@ section {
 
 }
 
+
+
 @media (min-width: 1366px) {
 
            /* LANDING */
@@ -397,14 +390,6 @@ section {
         .historia {
             right: 200px;
 
-            &__h2 {
-                h2 {
-                    /* font-size: 90px; */
-                }
-                p {
-               /*  height: 50vh; */
-                }
-            }
             &__img {
                 img {
                     width: 700px;
@@ -438,5 +423,10 @@ section {
             }
         }
     }
+
+                 /* CATALOGO */
+
+    
+
 
 }

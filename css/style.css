@@ -173,15 +173,18 @@ section {
   gap: 5vh;
   margin-top: 5vh;
   margin-bottom: 10vh; }
-  .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    padding: 10px;
-    background-color: #fff; }
-    .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo p {
-      font-family: TruenoUltLt;
-      margin: 0; }
+  .main_catalogo .catalogo_container .catalogo_zapa {
+    width: 300px;
+    height: 500px; }
+    .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      padding: 10px;
+      background-color: #fff; }
+      .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo p {
+        font-family: TruenoUltLt;
+        margin: 0; }
 
 .contacto_form {
   display: flex;
@@ -474,10 +477,6 @@ footer {
     /* ¿POR QUÉ NOSOTROS? */ }
     section .historia {
       right: 200px; }
-      section .historia__h2 h2 {
-        /* font-size: 90px; */ }
-      section .historia__h2 p {
-        /*  height: 50vh; */ }
       section .historia__img img {
         width: 700px;
         position: absolute;
@@ -542,10 +541,6 @@ footer {
     /* ¿POR QUÉ NOSOTROS? */ }
     section .historia {
       right: 200px; }
-      section .historia__h2 h2 {
-        /* font-size: 90px; */ }
-      section .historia__h2 p {
-        /*  height: 50vh; */ }
       section .historia__img img {
         width: 700px;
         position: absolute;
@@ -561,4 +556,5 @@ footer {
           font-size: 35px;
           height: 70vh; }
       section .porque__img img {
-        width: 500px; } }
+        width: 500px; }
+  /* CATALOGO */ }
