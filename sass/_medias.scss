@@ -8,7 +8,19 @@
         }
     }
 
+    /* LANDING/INDEX */
 
+    .video_banner_landing {
+        height: 20vh;
+        display: grid;
+        align-items: center;
+        pointer-events: none;
+            video {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+    }
 }
 
 
@@ -20,6 +32,21 @@
             }
         }
     }
+
+        /* LANDING/INDEX */
+
+        .video_banner_landing {
+            height: 40vh;
+            display: grid;
+            align-items: center;
+            pointer-events: none;
+                video {
+                    width: 100%;
+                    
+                    margin: 0;
+                    padding: 0;
+                }
+        }
 }
 
 
@@ -31,6 +58,21 @@
                 width: 200px;
             }
         }
+    }
+
+    /* LANDING/INDEX */
+
+    .video_banner_landing {
+        height: 50vh;
+        display: grid;
+        align-items: center;
+        pointer-events: none;
+            video {
+                width: 100%;
+                
+                margin: 0;
+                padding: 0;
+            }
     }
     
 
@@ -423,10 +465,5 @@ section {
             }
         }
     }
-
-                 /* CATALOGO */
-
-    
-
 
 }

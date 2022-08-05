@@ -1,12 +1,7 @@
 
 
-
-
-
-
-
 .main_catalogo {
-
+                                        /* TEXTO SUPERIOR "Mirá los precios..." */
     .text_catalogo {
         margin-top: 5vh;
         h3 {
@@ -17,7 +12,7 @@
             text-align: center;
         }
     }
-
+                                        /* CATÁLOGO */
         .catalogo_container {
             display: flex;
             gap: 5vh;

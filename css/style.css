@@ -2,10 +2,8 @@
 /* COLORES */
 /* FUENTES */
 /* SECTIONS */
-/* CUADRADOS */
 .video_banner_landing {
   height: 50vh;
-  background-color: black;
   display: grid;
   align-items: center;
   pointer-events: none; }
@@ -89,7 +87,7 @@
       flex-direction: column;
       align-items: center;
       padding: 10vh 0;
-      background-color: white;
+      background-color: #fff;
       box-shadow: 10px 10px 30px -12px rgba(0, 0, 0, 0.5); }
       .services .contenedor2__images img {
         width: 70vw; }
@@ -101,14 +99,14 @@
 
 .body_nosotros {
   background-image: url(../assets/Desktop3.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */ }
+  background-repeat: no-repeat; }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* ¿POR QUÉ? */ }
+  /* NUESTRA HISTORIA */
+  /* ¿POR QUÉ NOSOTROS? */ }
   section .historia {
     display: flex;
     flex-direction: column;
@@ -159,33 +157,36 @@ section {
         z-index: -1;
         opacity: 30%; }
 
-.main_catalogo .text_catalogo {
-  margin-top: 5vh; }
-  .main_catalogo .text_catalogo h3 {
-    background-color: black;
-    color: #fff;
-    font-family: Gordita-Regular;
-    font-size: 20px;
-    text-align: center; }
+.main_catalogo {
+  /* TEXTO SUPERIOR "Mirá los precios..." */
+  /* CATÁLOGO */ }
+  .main_catalogo .text_catalogo {
+    margin-top: 5vh; }
+    .main_catalogo .text_catalogo h3 {
+      background-color: black;
+      color: #fff;
+      font-family: Gordita-Regular;
+      font-size: 20px;
+      text-align: center; }
+  .main_catalogo .catalogo_container {
+    display: flex;
+    gap: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh; }
+    .main_catalogo .catalogo_container .catalogo_zapa {
+      width: 300px;
+      height: 500px; }
+      .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        padding: 10px;
+        background-color: #fff; }
+        .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo p {
+          font-family: TruenoUltLt;
+          margin: 0; }
 
-.main_catalogo .catalogo_container {
-  display: flex;
-  gap: 5vh;
-  margin-top: 5vh;
-  margin-bottom: 10vh; }
-  .main_catalogo .catalogo_container .catalogo_zapa {
-    width: 300px;
-    height: 500px; }
-    .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo {
-      display: flex;
-      flex-direction: column;
-      gap: 1vh;
-      padding: 10px;
-      background-color: #fff; }
-      .main_catalogo .catalogo_container .catalogo_zapa .card_text_catalogo p {
-        font-family: TruenoUltLt;
-        margin: 0; }
-
+/* FORMULARIO */
 .contacto_form {
   display: flex;
   flex-direction: column;
@@ -226,7 +227,7 @@ section {
       background-color: black;
       color: #fff; }
 
-/* BARRA DE NAVEGACIÓN */
+/* "PAGA CON MERCADO LIBRE" */
 .top__nav {
   display: flex;
   justify-content: center;
@@ -245,6 +246,7 @@ section {
     background-color: black;
     color: white; } }
 
+/* NAVBAR */
 .nav-back {
   display: flex;
   gap: 20vw;
@@ -261,18 +263,9 @@ nav {
   nav .navbar-brand .brand_nav {
     width: 130px; }
   nav .navbar-toggler {
-    width: 40px;
-    text-align: center;
+    width: 35px;
+    height: 40px;
     opacity: 30%; }
-  nav .image_logo {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 16vw; }
-  nav .hamburguesa {
-    display: grid;
-    height: 3vh;
-    margin-right: 16vw;
-    transform: translateY(3.5vh); }
   nav ul {
     display: none;
     align-items: center;
@@ -290,6 +283,7 @@ nav {
   list-style: none;
   box-sizing: border-box; }
 
+/* FUENTES */
 @font-face {
   font-family: TruenoSBd;
   src: url(../fonts/TruenoBlk.otf); }
@@ -302,8 +296,19 @@ nav {
   font-family: Gordita-Regular;
   src: url(../fonts/Gordita-Regular.otf); }
 
+/* FONDO */
 body {
   background-image: url(../assets/fondo_boutique.png); }
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  background-color: black; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #DC2D7D; }
 
 footer {
   display: flex;
@@ -311,7 +316,9 @@ footer {
   gap: 10vh;
   background-color: black;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  /* SECCIONES */
+  /* REDES SOCIALES */ }
   footer .footer__links {
     display: flex;
     flex-direction: column;
@@ -343,15 +350,45 @@ footer {
 
 @media (min-width: 300px) {
   nav .navbar-brand .brand_nav {
-    width: 160px; } }
+    width: 160px; }
+  /* LANDING/INDEX */
+  .video_banner_landing {
+    height: 20vh;
+    display: grid;
+    align-items: center;
+    pointer-events: none; }
+    .video_banner_landing video {
+      width: 100%;
+      margin: 0;
+      padding: 0; } }
 
 @media (min-width: 400px) {
   nav .navbar-brand .brand_nav {
-    width: 180px; } }
+    width: 180px; }
+  /* LANDING/INDEX */
+  .video_banner_landing {
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    pointer-events: none; }
+    .video_banner_landing video {
+      width: 100%;
+      margin: 0;
+      padding: 0; } }
 
 @media (min-width: 600px) {
   nav .navbar-brand .brand_nav {
     width: 200px; }
+  /* LANDING/INDEX */
+  .video_banner_landing {
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    pointer-events: none; }
+    .video_banner_landing video {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
   /* LANDING */
   .products__h2 h2 {
     width: 90vw;
@@ -556,5 +593,4 @@ footer {
           font-size: 35px;
           height: 70vh; }
       section .porque__img img {
-        width: 500px; }
-  /* CATALOGO */ }
+        width: 500px; } }

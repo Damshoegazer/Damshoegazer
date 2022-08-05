@@ -10,6 +10,8 @@ footer {
     padding-left: 0;
     padding-right: 0;
 
+                                        /* SECCIONES */
+
     .footer__links {
         @include display;
         align-items: center;
@@ -27,6 +29,9 @@ footer {
         }
         
     }
+
+                            /* REDES SOCIALES */
+
     .footer__social {
         display: flex;
         justify-content: center;

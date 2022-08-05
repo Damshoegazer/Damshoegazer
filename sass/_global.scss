@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+
+                     /* FUENTES */
+
 @font-face {
     font-family: TruenoSBd;
     src: url(../fonts/TruenoBlk.otf);
@@ -19,6 +22,21 @@
     src: url(../fonts/Gordita-Regular.otf);
 }
 
+
+                      /* FONDO */
+
 body {
     background-image: url(../assets/fondo_boutique.png);
+}
+
+                 /* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: $colornegro;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $coloracento;
 }
